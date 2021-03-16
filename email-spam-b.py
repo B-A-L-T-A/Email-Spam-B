@@ -25,8 +25,8 @@ if len(sys.argv) < 2:
 
 print()
 
-spamemail = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}]{Fore.LIGHTGREEN_EX} Enter spammer's gmail address: ")
-spampassword = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}]{Fore.LIGHTGREEN_EX} Enter spammer's password: ")
+spamemail = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}]{Fore.LIGHTGREEN_EX} Enter spammer's gmail address: {Fore.RESET}")
+spampassword = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}]{Fore.LIGHTGREEN_EX} Enter spammer's password: {Fore.RESET}")
 
 email = smtplib.SMTP("smtp.gmail.com", 587)
 email.ehlo()
@@ -36,22 +36,22 @@ try:
     email.login(spamemail, spampassword)
 except smtplib.SMTPAuthenticationError:
     print("")
-    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}The gmail or password might be wrong")
+    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}The gmail or password might be wrong{Fore.RESET}")
     print(
-        f"{Fore.RESET}[{Fore.LIGHTRED_EX}!{Fore.RESET}]{Fore.LIGHTGREEN_EX} OR You maybe haven't switched on less secure apps (https://myaccount.google.com/lesssecureapps)")
-    print(f"{Fore.RESET}[{Fore.LIGHTRED_EX}!{Fore.RESET}]{Fore.LIGHTGREEN_EX} Closing in 5 seconds...")
+f"[{Fore.LIGHTRED_EX}!{Fore.RESET}]{Fore.LIGHTGREEN_EX} OR You maybe haven't switched on less secure apps (https://myaccount.google.com/lesssecureapps){Fore.RESET}")
+    print(f"{Fore.RESET}[{Fore.LIGHTRED_EX}!{Fore.RESET}]{Fore.LIGHTGREEN_EX} Closing in 5 seconds...{Fore.RESET}")
     time.sleep(5)
     exit()
 
 print("")
 print(
-    f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}Gmail and password is correct, less secure apps is enabled")
+f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}Gmail and password is correct, less secure apps is enabled{Fore.RESET}")
 print("")
 victimemail = input(
-    f"{Fore.RESET} [{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter victim's email address: ")
-message = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter the message you want to send: ")
+    f"{Fore.RESET} [{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter victim's email address: {Fore.RESET}")
+message = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter the message you want to send: {Fore.RESET}")
 number = int(input(
-    f"[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter how many times you want to send this message: "))
+f"[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter how many times you want to send this message: {Fore.RESET}"))
 
 print("")
 print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX} Information is correct!{Fore.RESET}")
@@ -66,13 +66,13 @@ try:
         server.starttls()
     server.login(spamemail, spampassword)
     i = 0
-    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX} Rolling spliff... \n{Fore.RESET}")
+    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX} Rolling spliff... {Fore.RESET}")
     print('')
     while i < number:
         i += 1
         server.sendmail(spamemail, victimemail, message)
         if i == 1:
-            print((f'[{Fore.LIGHTRED_EX}>{Fore.RESET}] {Fore.LIGHTGREEN_EX}''[%d] Email sent ') % (i))
+            print((f'[{Fore.LIGHTRED_EX}+{Fore.RESET}] {Fore.LIGHTGREEN_EX}''[%d] Email sent ') % (i))
         elif i == 2:
             print((f'{Fore.RESET}[{Fore.LIGHTRED_EX}+{Fore.RESET}] {Fore.LIGHTGREEN_EX}''[%d] Email sent ') % (i))
         elif i == 3:
