@@ -2,11 +2,9 @@ import os
 import sys
 import time
 import smtplib
-import ctypes
 from tqdm import tqdm
 from colorama import Fore
 
-ctypes.windll.kernel32.SetConsoleTitleW('email spammer by balta')
 if len(sys.argv) < 2:
     os.system("clear || cls")
     loop = tqdm(total=40000, position=0, leave=False)
