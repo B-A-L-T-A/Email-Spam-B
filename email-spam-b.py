@@ -54,7 +54,7 @@ number = int(input(
 f"[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter how many times you want to send this message: {Fore.RESET}"))
 
 print("")
-print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX} Information is correct!{Fore.RESET}")
+print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}]{Fore.LIGHTGREEN_EX} Information is correct!{Fore.RESET}")
 print("")
 
 try:
@@ -66,7 +66,7 @@ try:
         server.starttls()
     server.login(spamemail, spampassword)
     i = 0
-    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX} Rolling spliff... {Fore.RESET}")
+    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}]{Fore.LIGHTGREEN_EX} Rolling spliff... {Fore.RESET}")
     print('')
     while i < number:
         i += 1
