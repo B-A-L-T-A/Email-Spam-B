@@ -14,16 +14,12 @@ if len(sys.argv) < 2:
         loop.set_description(Fore.YELLOW + 'Opening Script'.format(k))
         loop.update(1)
     loop.close()
-    sys.stdout.write(f'''{Fore.RESET}                                         
-
-{Fore.LIGHTMAGENTA_EX}   ____           _ __    ____                    ___ {Fore.RESET}
-{Fore.LIGHTBLUE_EX}  / __/_ _  ___ _(_) /___/ __/__  ___ ___ _  ____/ _ ){Fore.RESET}
-{Fore.LIGHTCYAN_EX} / _//  ' \/ _ `/ / /___/\ \/ _ \/ _ `/  ' \/___/ _  |{Fore.RESET}
-{Fore.LIGHTRED_EX}/___/_/_/_/\_,_/_/_/   /___/ .__/\_,_/_/_/_/   /____/ {Fore.RESET}
-{Fore.LIGHTGREEN_EX}Author: Balta             /_/ v1.0                    {Fore.RESET}           
- 
-[{Fore.RED}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}Make sure your gmail has less secure apps on (https://myaccount.google.com/lesssecureapps)
-    ''' + Fore.RESET)
+    sys.stdout.write(f"{Fore.LIGHTMAGENTA_EX}   ____           _ __    ____                    ___ {Fore.RESET}\n")
+    print(f"{Fore.LIGHTBLUE_EX}  / __/_ _  ___ _(_) /___/ __/__  ___ ___ _  ____/ _ ){Fore.RESET}")
+    print(f"{Fore.LIGHTCYAN_EX} / _//  ' \/ _ `/ / /___/\ \/ _ \/ _ `/  ' \/___/ _  |{Fore.RESET}")
+    print(f"{Fore.LIGHTRED_EX}/___/_/_/_/\_,_/_/_/   /___/ .__/\_,_/_/_/_/   /____/ {Fore.RESET}")
+    print(f"{Fore.LIGHTGREEN_EX}Author: Balta             /_/ v1.0                    {Fore.RESET}")
+    print(f"[{Fore.RED}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}Make sure your gmail has less secure apps on (https://myaccount.google.com/lesssecureapps)")
 
 print()
 
