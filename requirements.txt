@@ -1,5 +1,3 @@
 argparse
 requests
-smtplib==8.8.4
-ctypes
 tqdm
