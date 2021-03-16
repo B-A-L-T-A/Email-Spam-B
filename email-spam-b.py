@@ -92,7 +92,7 @@ try:
         elif i == 0:
             print((f'{Fore.RESET}[{Fore.LIGHTRED_EX}+{Fore.RESET}] {Fore.LIGHTGREEN_EX}''[%d] Email sent ') % (i))
         else:
-            print((f'{Fore.RESET}[{Fore.LIGHTRED_EX}+{Fore.RESET}] {Fore.LIGHTGREEN_EX}'' [%d] Email sent ') % (i))
+            print((f'{Fore.RESET}[{Fore.LIGHTRED_EX}+{Fore.RESET}] {Fore.LIGHTGREEN_EX}''[%d] Email sent ') % (i))
         sys.stdout.flush()
     print()
     print(f"{Fore.RESET}[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX} The email has been put in a spliff")
