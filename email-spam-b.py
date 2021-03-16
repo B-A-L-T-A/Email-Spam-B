@@ -48,7 +48,7 @@ print(
 f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}Gmail and password is correct, less secure apps is enabled{Fore.RESET}")
 print("")
 victimemail = input(
-f"{Fore.RESET} [{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter victim's email address: {Fore.RESET}")
+f"{Fore.RESET}[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter victim's email address: {Fore.RESET}")
 message = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter the message you want to send: {Fore.RESET}")
 number = int(input(
 f"[{Fore.LIGHTRED_EX}?{Fore.RESET}] {Fore.LIGHTGREEN_EX}Enter how many times you want to send this message: {Fore.RESET}"))
