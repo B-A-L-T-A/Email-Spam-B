@@ -17,7 +17,7 @@ if len(sys.argv) < 2:
 {Fore.LIGHTBLUE_EX}  / __/_ _  ___ _(_) /___/ __/__  ___ ___ _  ____/ _ ){Fore.RESET}
 {Fore.LIGHTCYAN_EX} / _//  ' \/ _ `/ / /___/\ \/ _ \/ _ `/  ' \/___/ _  |{Fore.RESET}
 {Fore.LIGHTRED_EX}/___/_/_/_/\_,_/_/_/   /___/ .__/\_,_/_/_/_/   /____/ {Fore.RESET}
-{Fore.LIGHTGREEN_EX}Author: Balta             /_/ v1.0                    {Fore.RESET}           
+{Fore.LIGHTGREEN_EX}Author: Balta             {Fore.LIGHTRED_EX}/_/{Fore.RESET}{Fore.LIGHTGREEN_EX}v1.0                    {Fore.RESET}           
 
 [{Fore.RED}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}Make sure your gmail has less secure apps on (https://myaccount.google.com/lesssecureapps)
     ''' + Fore.RESET)
