@@ -7,6 +7,7 @@ from colorama import Fore
 
 if len(sys.argv) < 2:
     os.system("clear || cls")
+    print("")
     loop = tqdm(total=40000, position=0, leave=False)
     for k in range(40000):
         loop.set_description(Fore.YELLOW + 'Opening Script'.format(k))
