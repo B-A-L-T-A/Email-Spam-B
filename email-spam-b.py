@@ -106,7 +106,7 @@ try:
 
 except KeyboardInterrupt:
     print()
-    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}] {Fore.LIGHTGREEN_EX} The email has not been put in a spliff")
+    print(f"[{Fore.LIGHTRED_EX}!{Fore.RESET}]{Fore.LIGHTGREEN_EX} The email has not been put in a spliff")
     loop = tqdm(total=40000, position=0, leave=False)
     for k in range(40000):
         loop.set_description(Fore.YELLOW + 'Closing'.format(k))
