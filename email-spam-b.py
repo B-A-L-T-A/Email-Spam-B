@@ -8,11 +8,13 @@ from colorama import Fore
 if len(sys.argv) < 2:
     os.system("clear || cls")
     print("")
+    
     loop = tqdm(total=40000, position=0, leave=False)
     for k in range(40000):
         loop.set_description(Fore.YELLOW + 'Opening Script'.format(k))
         loop.update(1)
     loop.close()
+    
     sys.stdout.write(f'''{Fore.RESET}                                         
 {Fore.LIGHTMAGENTA_EX}   ____           _ __    ____                    ___ {Fore.RESET}
 {Fore.LIGHTBLUE_EX}  / __/_ _  ___ _(_) /___/ __/__  ___ ___ _  ____/ _ ){Fore.RESET}
