@@ -27,7 +27,7 @@ if len(sys.argv) < 2:
 [{Fore.RED}!{Fore.RESET}] {Fore.LIGHTGREEN_EX}Make sure your gmail has less secure apps on (https://myaccount.google.com/lesssecureapps)
     ''' + Fore.RESET)
 
-print()
+print("")
 
 spamemail = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}]{Fore.LIGHTGREEN_EX} Enter spammer's gmail address: {Fore.RESET}")
 spampassword = input(f"[{Fore.LIGHTRED_EX}?{Fore.RESET}]{Fore.LIGHTGREEN_EX} Enter spammer's password: {Fore.RESET}")
