@@ -11,11 +11,11 @@ if len(sys.argv) < 2:
     
     loop = tqdm(total=40000, position=0, leave=False)
     for k in range(40000):
-        loop.set_description(Fore.YELLOW + 'Opening Script'.format(k))
+        loop.set_description(Fore.LIGHTRED_EX + 'Opening Script'.format(k))
         loop.update(1)
     loop.close()
     
-    sys.stdout.write(f'''{Fore.RESET}                                         
+    sys.stdout.write(f'''                                         
 {Fore.LIGHTMAGENTA_EX}   ____           _ __    ____                    ___ {Fore.RESET}
 {Fore.LIGHTBLUE_EX}  / __/_ _  ___ _(_) /___/ __/__  ___ ___ _  ____/ _ ){Fore.RESET}
 {Fore.LIGHTCYAN_EX} / _//  ' \/ _ `/ / /___/\ \/ _ \/ _ `/  ' \/___/ _  |{Fore.RESET}
