@@ -11,8 +11,8 @@ if len(sys.argv) < 2:
     os.system("clear || cls")
     print("")
     
-    loop = tqdm(total=30000, position=0, leave=False)
-    for k in range(30000):
+    loop = tqdm(total=10000, position=0, leave=False)
+    for k in range(10000):
         loop.set_description(Fore.LIGHTRED_EX + 'Opening Script'.format(k))
         loop.update(1)
     loop.close()
